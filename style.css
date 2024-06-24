@@ -1,0 +1,403 @@
+*{
+   box-sizing: border-box;
+   
+}
+body{
+    background-color: rgba(0, 0, 0, 0.833);
+    overflow-y: scroll;
+    transition: all 0,5s;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    font-weight:bold;
+}
+span{
+    font-size: 30px;
+}
+div.logo{
+    display: flex;
+    margin-left: 200px;
+}
+nav{
+    position: absolute;
+    font-size:22px;
+    top:-10px;
+    left:15rem;
+    margin-left: 600px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    
+}
+nav li{
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    padding: 10px;
+  
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.active{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+
+ }
+    
+
+hr{
+    width: 100%;
+    height: 1.5px;
+}
+ 
+
+/*part de main*/
+main{
+    margin-top:4px;
+    margin-bottom:30px;
+}
+section#photoFond{
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap:10px;
+   background-image: url('./images/one-piece-banner.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:0px -250px ;
+   width: 100%;
+   height:300px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-bottom: 100px;
+   
+}
+section h1{
+    letter-spacing: 1px;
+    font-size:30px;
+    color:rgb(255, 255, 255);
+    
+}
+
+section input{
+    border:1px solid white;
+    outline: none;
+    border-radius: 10px;
+    padding: 6.5px;
+    text-align: center;
+    background: transparent;
+    width: 17.8rem;
+    margin-left: 20px;
+    margin-bottom: 25px;  
+}
+section button{
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:8px;
+    outline: none;
+    box-shadow: 3px 4px 10px black;
+    border: none;
+    border-radius: 10px;
+    margin-left:50px;
+    width: 13.6rem;
+}
+ footer{
+    margin-left: 160px;
+    cursor: pointer;
+    display:flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+    font-weight:bold;
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap:500px;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+footer div li{
+    padding: 5px;
+}
+
+footer div li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: .3s ease;
+    font-weight: 900;
+} 
+footer div li a:hover{
+    transform: rotate(20deg);
+    color: red;
+
+}
+footer h3{
+    transition: .3s ease;
+}
+
+
+footer div::before{
+    content: '';
+    background-color: red;
+    width: 50px;
+    height: 1px;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    top:23px ;
+    left: 1px;
+    transition: .5s ease;
+} 
+.reseaux::after{
+    content: "";
+    background-color: blue;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    transition: .5s ease;
+    padding: 2px;
+    position: relative;
+    top: -240px;
+    left: 190px;
+}
+.patenaire::after{
+    content: "";
+    background-color: blue;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    transition: .5s ease;
+    padding: 2px;
+    position: relative;
+    top: -310px;
+    left: 190px;
+}
+/* page streming*/
+section.liste{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-content: center;
+}
+div.list{
+    display: inline-block;
+    
+background-color:black;
+height: 80px;
+padding: 8px;
+}
+div ul{
+      justify-content:center;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+div li{
+    list-style: none;
+    font-size: 20px; 
+    position: relative;  
+    
+}
+div a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.actived{
+    background-color: orange;
+    width: 100px;
+    height: 75px;
+    padding: 20px;
+    margin-top:-21px;
+    margin-left: -46px;
+}
+section.gallery-images{
+    margin-top:70px;
+    margin-bottom: 50px;
+    
+}
+section.gallery-images img{
+    width: 250px;
+    height:300px;
+    
+}
+.gallery1 img{
+  margin-left:10px;
+  margin-top: 7px;
+  margin-bottom:8px;
+}
+
+.grp2{
+display: flex;
+justify-content: space-between;
+gap: 5px;
+
+}
+ .gallery1{
+display: flex;
+    justify-content: space-between;
+    gap:2px;
+    margin-left:4.6rem;
+    margin-right: 1.54rem;
+    margin-bottom:100px;
+} 
+.gallery2{
+    display: flex;
+    justify-content: space-between;
+    gap:2px;
+    margin-left:4.6rem;
+    margin-right: 1.54rem;
+    margin-bottom:100px;
+}
+div.anime{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: black;
+    height:500px;
+    width:270px; 
+    color: white;
+    border-radius: 3px;
+     text-align: center;
+
+}
+ .anime2, .anime p{
+    word-spacing: 2px;
+    font-size: 17px;
+    font-weight:bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.anime2{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: black;
+    height:520px;
+    width:270px; 
+    color: white;
+    border-radius: 3px;
+     text-align: center;
+}
+.gallery3{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.btn{
+  text-align: center;
+  margin-left:-70px;
+  margin-top: 2rem;
+}
+.btn button{
+border: 2px solid red;
+border-radius: 10px;
+background-color: red;
+color: white;
+width:160px;
+font-size: 25px;
+padding: 6px;
+
+}
+/*  video html*/
+section.video{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    flex-direction: column;
+}
+#NEXT{
+    margin-top: 30px;
+    padding: 21px;
+    width:130px;
+    border:none;
+    border-radius:6px;
+    color:white;
+    background-color:orange;
+}
+
+section#formulaire{
+margin-top: 50px;
+ margin-left:17%;
+ margin-bottom: 30px;
+ background-image: url(./images/41.jpg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ 
+
+
+}
+section div#tete{
+display: flex;
+margin-left:16%;
+ 
+gap: 17px;
+margin-bottom:40px;
+border-bottom:5px solid white ;
+padding-bottom: 20px;
+width: 700px;;
+
+}
+form{
+    display:flexbox;
+    flex-direction: column;
+    padding: 23px;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 9%;
+    font-size: 20px; 
+    
+}
+input{
+    color: aqua;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+
+
+}
+.inputs{
+    margin-bottom: 30px;
+
+}
+
+form label{
+    position: relative;
+    top:-35px;
+    left:100px;
+}
+form button{
+    margin-top: 7px;
+    margin-left:6%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    width: 700px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+
+}
+
+
